@@ -1,14 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+
+
+
+
 <?php
+
+error_reporting(-1);
+
 //echo " Приветствую, Степик!";
 
 //$x = readline();
@@ -39,19 +36,46 @@
 //
 //echo $sum;
 
-$some_string = 12;
-$found = "2000";
-echo $some_string.$found;
+//$some_string = 12;
+//$found = "2000";
+//echo $some_string + $found;
 
 
+//$city = "Лондон";
+//function get_city()
+//{
+//    global $city;
+//    echo $city;
+//}
+//
+//get_city();
 
+//$num1 = 32;
+//function  my_func() {
+//    $num1 = 64;
+//}
+//my_func();
+//echo $num1;
 
+//
+//$a = readline();
+//$b = readline();
+//echo $a + $b;
+
+//$x = 13;
+//$y = 6;
+//$z = 3;
+//$x -= $y;
+//$z += $x;
+//echo $z;
+
+$a = "5";
+$z = 5;
+
+var_dump($a == $z);
 
 ?>
 
-<h3>Stepik</h3>
-</body>
-</html>
 
 
 
