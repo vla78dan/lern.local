@@ -31,10 +31,17 @@
 //echo 'January\nFebrary\nMarch';
 //echo "January\nFebrary\nMarch";
 
-echo "Январь\nФевраль\nМарт";
+//echo "Январь\nФевраль\nМарт";
 
+//$int = 6;
+//$str = "5";
+//$sum = $int + $str;
+//
+//echo $sum;
 
-
+$some_string = 12;
+$found = "2000";
+echo $some_string.$found;
 
 
 
