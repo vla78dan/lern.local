@@ -15,8 +15,8 @@ $light = 'green1';
 //echo $light == 'red1' ? 'GO2!!' : 'STOPE!!';
 
 //echo $price ?: 'unknown price';
-$test = $price >= 10 ?: 'unknown price';
-var_dump($test);
+//$test = $price >= 10 ?: 'unknown price';
+//var_dump($test);
 
 
 
