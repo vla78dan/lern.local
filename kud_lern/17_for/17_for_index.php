@@ -41,6 +41,6 @@ for ($tr = 1; $tr < 10; $tr++) {
     }
     echo "</tr>";
 }
-echo '<table>';
+echo '</table>';
 
 ?>
