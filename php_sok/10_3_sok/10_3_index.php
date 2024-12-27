@@ -1,6 +1,6 @@
 <?php error_reporting(E_ALL);
 
-
+/*
 //$array = array(
 //    'name1' => 'Bob',
 //    'name2' => 'Dodd',
@@ -17,7 +17,7 @@
 //} else {
 //    echo "Not значение";
 //}
-/*
+
 switch ($name) {
     case 'Alex':
     case 'Petr':
@@ -30,7 +30,7 @@ switch ($name) {
         echo "Не найдено";
         break;
 }
-*/
+
 
 $name = 'Bob';
 function show_name($name)
@@ -39,7 +39,7 @@ function show_name($name)
    }
 
 show_name($name);
-
+*/
 
 
 
