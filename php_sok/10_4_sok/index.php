@@ -12,7 +12,20 @@
 
 
 <?php
-//extract — Импортирует переменные массива в текущую таблицу символов
+//str_split — Преобразовывает строку в массив
+
+$str = "Hello Friend";
+
+$arr1 = str_split($str);
+$arr2 = str_split($str, 3);
+
+echo'<pre>';
+print_r($arr2);
+echo'<pre>';
+
+//print_r($arr2);
+
+
 
 ?>
 <h2>Hello2</h2>
@@ -25,8 +38,62 @@
  *
  *
  *
+ *strlen — Получает длину строки
+
+$string = "Dodd is a web developer!    ";
+$str2 = strlen( $string);
+echo'<pre>';
+echo $str2;
+echo'<pre>';
  *
+ *strip_tags — Удаляет HTML- и PHP-теги из строки
+
+$text = '<p>Параграф.</p><!-- Комментарий --> <a href="#fragment">Ещё текст</a>';
+echo strip_tags($text);
+echo "\n";
  *
+ *str_replace — Заменяет вхождения строки поиска строкой замены
+
+$string = "Dodd is a web developer!";
+$str2 = str_replace('Dodd', 'Bobbb', $string);
+echo'<pre>';
+echo $str2;
+echo'<pre>';
+ *
+ *trim — Удаляет пробельные или другие символы в начале и конце строки\
+
+$hello = "   Hello World!      ";
+$hello2 = trim($hello);
+echo'<pre>';
+var_dump($hello2);
+echo'<pre>';
+ *
+ *implode — Объединяет элементы массива в строку
+$array = ['имя', 'почта', 'телефон'];
+
+$res = implode(",", $array);
+echo'<pre>';
+print_r($res);
+echo'<pre>';
+ *
+ *explode — Разбивает строку разделителем
+
+$name = 'Doddy Bobb Todddd';
+$res = explode(" ", $name, 2);
+echo'<pre>';
+print_r($res);
+echo'<pre>';
+ *
+ *extract — Импортирует переменные массива в текущую таблицу символов
+
+$fruits = array(
+    'fruit1' => 'apple',
+    'fruit2' => 'mango',
+    'fruit3' => 'pie');
+extract($fruits);
+echo '<pre>';
+echo $fruit1;
+echo '</pre>';
  *
  *
  *compact — Создаёт массив, содержащий названия переменных и их значения
