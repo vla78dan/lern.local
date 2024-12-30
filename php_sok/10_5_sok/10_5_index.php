@@ -22,18 +22,28 @@
 
 
 <form method="post" action="action.php">
-    <input type="text" name="FIO">
-    <textarea name="message"></textarea>
+    <input type="text" name="fio">
+    <textarea name="massage"></textarea>
     <input type="checkbox" name="subscribe" value="subscribed" />
-    <select>
+    <select name ="number[]" multiple>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
     </select>
-    <input type="submit" value="Отправить форму">
+    <input type="submit" value="Отправить форму" />
 
 </form>
+
+<a href="10_5_index.php/?fio=JuJiK&massage=RyJiK&test=one">Add to card</a>
+
+<?php
+if(!empty($_GET)){
+print_r($_GET);
+}
+?>
+
+
 <h2>Doddd</h2>
 
 <?php
