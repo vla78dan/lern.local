@@ -1,5 +1,5 @@
 <?php error_reporting(E_ALL);
-session_start();
+
 ?>
 
 <!doctype html>
@@ -13,40 +13,58 @@ session_start();
 </head>
 <body>
 
-
-
 <?php
+setcookie('name', 'Doddd', time() + (86400 * 30));
+setcookie('surname', 'Dodddiiiyee');
+setcookie('surname', '', time() - (60 * 30));
 
-define("PASSWORD", "123"); //Константа
+echo $_COOKIE['name'];
+echo $_COOKIE['surname'];
 
-if (!empty($_POST["password"])){
-    if ($_POST["password"] === PASSWORD) {
-        $_SESSION['result'] = 'success';
 
-} else {
-    $_SESSION['result'] = 'fail';
-}
-header("Location: 10-5_session_page1.php");
-die;
-}
+
+
+
 ?>
 
 
-<form method="post">
-    <input type="password" name="password" placeholder="Insert Pass">
-    <input type="submit" value="Get Access">
-
-
-</form>
 
 
 
-<?php if (isset($_SESSION['result'])) {
-    echo 'Status: ' . $_SESSION['result'];
-}
-unset($_SESSION['result']);
 
-?>
+</body>
+</html>
+<?php
+//define("PASSWORD", "123"); //Константа
+//
+//if (!empty($_POST["password"])){
+//    if ($_POST["password"] === PASSWORD) {
+//        $_SESSION['result'] = 'success';
+//
+//} else {
+//    $_SESSION['result'] = 'fail';
+//}
+//header("Location: 10-5_session_page1.php");
+//die;
+//}
+//?>
+<!---->
+<!---->
+<!--<form method="post">-->
+<!--    <input type="password" name="password" placeholder="Insert Pass">-->
+<!--    <input type="submit" value="Get Access">-->
+<!---->
+<!---->
+<!--</form>-->
+<!---->
+<!---->
+<!---->
+<?php //if (isset($_SESSION['result'])) {
+//    echo 'Status: ' . $_SESSION['result'];
+//}
+//unset($_SESSION['result']);
+//
+//?>
 
 
 <!--<form action="">-->
@@ -74,7 +92,3 @@ unset($_SESSION['result']);
 <!--</form>-->
 
 <!--<a href="10_5_index.php/?fio=JuJiK&massage=RyJiK&test=one">Add to card</a>-->
-
-
-</body>
-</html>
