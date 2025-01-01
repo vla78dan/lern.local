@@ -1,10 +1,45 @@
 <?php
 
 session_start(); //Создаем сессию
-$_SESSION['name'] = 'Dodd';
+//$_SESSION['name'] = 'Bobbbb';
 
 
-var_dump($_SESSION['name']);
+if ($_SESSION['result'] !== 'success') die('Вам доступ закрыт');
+
+echo 'Код нашей страницы';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
