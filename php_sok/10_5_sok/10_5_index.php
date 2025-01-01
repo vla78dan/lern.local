@@ -1,4 +1,5 @@
 <?php error_reporting(E_ALL);
+session_start();
 ?>
 
 <!doctype html>
@@ -41,6 +42,9 @@
 if(!empty($_GET)){
 print_r($_GET);
 }
+
+var_dump($_SESSION['name']);
+
 ?>
 
 
