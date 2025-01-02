@@ -102,6 +102,26 @@ $goods = [
 
 echo '<pre>' . print_r($goods, 1) . '</pre>';
 
+//for ($i = 0; $i < 3; $i++) {
+//    $goods[$i]['total'] = $goods[$i]['price'] * $goods[$i]['qty'];
+//    $goods[$i]['price'] *= 2;
+//
+//}
+
+foreach ($goods as &$good) {
+    $good['price'] *= 2;
+}
+
+echo '<pre>' . print_r($goods, 1) . '</pre>';
+
+
+
+
+
+
+
+
+
 
 //for ($i = 0; $i < 3; $i++) {
 //    echo "Наменование: {$goods[$i]['title']} . <br>";
@@ -111,12 +131,12 @@ echo '<pre>' . print_r($goods, 1) . '</pre>';
 //}
 
 
-foreach ($goods as $good) {
-    echo "Наменование: {$good['title']} . <br>";
-    echo "Цена: {$good['price']} . <br>";
-    echo "Количество: {$good['qty']} . <br>";
-    echo '<hr>';
-}
+//foreach ($goods as $good) {
+//    echo "Наменование: {$good['title']} . <br>";
+//    echo "Цена: {$good['price']} . <br>";
+//    echo "Количество: {$good['qty']} . <br>";
+//    echo '<hr>';
+//}
 
 
 
